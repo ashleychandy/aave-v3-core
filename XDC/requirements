@@ -1,0 +1,8 @@
+XDC apothem
+
+PRIVATE_KEY=0x3586398ab1ca37968ff09ddb2d7bed31501491d2e0dfd8ebccdb70876328e2ac
+
+data feed
+XDC/USDT=0x7D276a421fa99B0E86aC3B5c47205987De76B497
+
+rpc=https://erpc.apothem.network

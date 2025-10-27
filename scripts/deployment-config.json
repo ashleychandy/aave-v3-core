@@ -1,0 +1,58 @@
+{
+  "network": "xdcApothem",
+  "skipSteps": [],
+  "deployedContracts": {
+    "testTokens": {
+      "USDT": "0xD79cc3b7F541aCfAD5c5B51065CBc6BCE972a8Cb",
+      "WXDC": "0xd3a297f80dD85d15F45567B790cd50129a4e751b"
+    },
+    "libraries": {
+      "PoolLogic": "0x37a8151D20eEC65A7566DAe6018e1314F7a14a7d",
+      "SupplyLogic": "0xD47397943504EE308Dd9899c549FBcB1feABF982",
+      "BorrowLogic": "0x9F85308d651d8D16E9474b7741d3E9eabbf42979",
+      "LiquidationLogic": "0xea3478681ED754EAAeED328d6Ff4cf9b817502c5",
+      "EModeLogic": "0x0C9415a99D849825372f22eAc7475B0739847dDA",
+      "BridgeLogic": "0x39aF97220a7Fc2A53bF6B2FdeeE8f27d3655DDd3",
+      "FlashLoanLogic": "0x47B44005cac768B021943D85B1EC1dcDc6833E7d",
+      "ConfiguratorLogic": "0x0d8A25C2A762ce92798c178C3e3bEF33867910B4"
+    },
+    "core": {
+      "PoolAddressesProviderRegistry": "0x1a878A7432Bbf7E518D093de9AfcA90160221141",
+      "PoolAddressesProvider": "0x1667200D80ef744c0658B790459F1BD9e25eD348",
+      "ACLManager": "0x718E2b21EE840C3D74161143F08F2B3509b67292",
+      "AaveOracle": "0x7D276a421fa99B0E86aC3B5c47205987De76B497",
+      "PoolImpl": "0x9a18a959156e5268dDc893CaEE335539e8Bf77a2",
+      "PoolProxy": "0xaF3298Eff21e8b5682A51C5fffc8ec3742904Af5",
+      "PoolConfiguratorImpl": "",
+      "PoolConfiguratorProxy": "",
+      "ProtocolDataProvider": "",
+      "ReservesSetupHelper": "",
+      "AToken": "",
+      "DelegationAwareAToken": "",
+      "StableDebtToken": "",
+      "VariableDebtToken": ""
+    },
+    "strategies": {
+      "USDT": "",
+      "WXDC": ""
+    },
+    "reserves": {
+      "USDT": {
+        "aToken": "",
+        "stableDebtToken": "",
+        "variableDebtToken": "",
+        "initialized": false
+      },
+      "WXDC": {
+        "aToken": "",
+        "stableDebtToken": "",
+        "variableDebtToken": "",
+        "initialized": false
+      }
+    }
+  },
+  "notes": {
+    "skipSteps": "Array of step numbers to skip (e.g., [1, 2, 3])",
+    "deployedContracts": "Fill in addresses of already deployed contracts to skip redeployment"
+  }
+}

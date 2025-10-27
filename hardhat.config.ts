@@ -1,18 +1,16 @@
-import path from 'path';
-import { HardhatUserConfig } from 'hardhat/types';
 // @ts-ignore
-import { accounts } from './test-wallets.js';
-import { COVERAGE_CHAINID, HARDHAT_CHAINID } from './helpers/constants';
 import { buildForkConfig } from './helper-hardhat-config';
+import { COVERAGE_CHAINID, HARDHAT_CHAINID } from './helpers/constants';
+import { accounts } from './test-wallets.js';
 
 require('dotenv').config();
 
+import '@nomicfoundation/hardhat-chai-matchers';
 import '@nomicfoundation/hardhat-toolbox';
-import 'hardhat-deploy';
 import '@tenderly/hardhat-tenderly';
 import 'hardhat-contract-sizer';
 import 'hardhat-dependency-compiler';
-import '@nomicfoundation/hardhat-chai-matchers';
+import 'hardhat-deploy';
 
 import { DEFAULT_NAMED_ACCOUNTS } from '@aave/deploy-v3';
 
@@ -82,6 +80,13 @@ const hardhatConfig = {
         initialIndex: 0,
         count: 20,
       },
+    },
+    xdcApothem: {
+      url: process.env.XDC_RPC || 'https://erpc.apothem.network',
+      chainId: 51,
+      accounts: process.env.XDC_PRIVATE_KEY ? [process.env.XDC_PRIVATE_KEY] : [],
+      gasPrice: 'auto',
+      gas: 'auto',
     },
   },
   namedAccounts: {
